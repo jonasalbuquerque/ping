@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jonasalbuquerque/CLionProjects/ping/main.cpp
+cstdio
+-
+cstdlib
+-
+csignal
+-
+arpa/inet.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+unistd.h
+-
+netinet/in.h
+-
+netinet/ip.h
+-
+netinet/ip_icmp.h
+-
+netdb.h
+-
+csetjmp
+-
+cerrno
+-
+sys/time.h
+-
+strings.h
+-
+cstring
+-
+

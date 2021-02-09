@@ -1,0 +1,2 @@
+/usr/bin/ar qc libping_lib.a  CMakeFiles/ping_lib.dir/IcmpPacket.cpp.o CMakeFiles/ping_lib.dir/client.cpp.o CMakeFiles/ping_lib.dir/main.cpp.o CMakeFiles/ping_lib.dir/server.cpp.o
+/usr/bin/ranlib libping_lib.a
