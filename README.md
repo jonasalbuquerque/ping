@@ -1,6 +1,6 @@
 # Ping Application
 
-Simple ping application with two threads (client and server) that communicate.
+Simple ping application with two threads (client and server) communicating by sockets and exchanging ICMP messages.
 
 The client side:
 
