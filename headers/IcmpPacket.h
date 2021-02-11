@@ -1,16 +1,6 @@
 #ifndef PING_ICMPPACKET_H
 #define PING_ICMPPACKET_H
 
-#include <iostream>
-#include <vector>
-#include <unistd.h>
-#include <arpa/inet.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <memory>
-
-// ICMP header for both IPv4 and IPv6.
-//
 // The wire format of an ICMP header is:
 //
 // 0               8               16                             31
@@ -23,6 +13,11 @@
 // |          identifier           |       sequence number        |       |
 // |                               |                              |       v
 // +-------------------------------+------------------------------+      ---
+
+#include <iostream>
+#include <vector>
+#include <unistd.h>
+#include <memory>
 
 class IcmpPacket {
 private:

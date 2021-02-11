@@ -1,23 +1,21 @@
-//
-// Created by jonasalbuquerque on 09/02/2021.
-//
-
 #ifndef PING_CLIENT_H
 #define PING_CLIENT_H
 
 #include "IcmpPacket.h"
+#include "sockethandler.h"
+#include "utils.h"
 
 class Client {
 public:
-    int connect();
+    Client();
     void send();
     void receive();
 private:
+    SocketHandler socketHandler_;
     IcmpPacket echoRequest_;
     std::shared_ptr<IcmpPacket> echoReply_;
-    int socket_;
-    struct sockaddr_in serverAddr_, clientAddr_;
 };
+
 
 
 #endif //PING_CLIENT_H

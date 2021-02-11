@@ -3,14 +3,37 @@
 #include "../headers/client.h"
 #include "../headers/server.h"
 
-Server g_server;
-Client g_client;
+void start_server()
+{
+    try
+    {
+        Server g_server;
+        g_server.listen();
+    }
+    catch (const std::exception& e)
+    {
+        std::string error_msg = "ON SERVER: ";
+        error_msg.append(e.what());
+        throw std::runtime_error(error_msg);
+    }
+}
 
-void start_server() { g_server.listen(); }
+void start_client()
+{
+    try
+    {
+        Client g_client;
+        g_client.send();
+    }
+    catch (const std::exception& e)
+    {
+        std::string error_msg = "ON CLIENT: ";
+        error_msg.append(e.what());
+        throw std::runtime_error(error_msg);
+    }
+}
 
-void start_client() { g_client.send(); }
-
-int main(int argc, char* argv[])
+int main()
 {
     try
     {

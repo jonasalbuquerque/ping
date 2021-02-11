@@ -6,18 +6,18 @@
 #define PING_SERVER_H
 
 #include "IcmpPacket.h"
+#include "sockethandler.h"
+#include "utils.h"
 
 class Server {
 public:
-    int connect();
+    Server();
     void listen();
     void reply();
-
 private:
+    SocketHandler socketHandler_;
     std::shared_ptr<IcmpPacket> echoRequest_;
     IcmpPacket echoReply_;
-    int socket_;
-    struct sockaddr_in serverAddr_, clientAddr_;
 };
 
 #endif //PING_SERVER_H
