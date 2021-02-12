@@ -326,6 +326,66 @@ server.cpp.s:
 	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_lib.dir/build.make sources/CMakeFiles/ping_lib.dir/server.cpp.s
 .PHONY : server.cpp.s
 
+sockethandler.o: sockethandler.cpp.o
+
+.PHONY : sockethandler.o
+
+# target to build an object file
+sockethandler.cpp.o:
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_run.dir/build.make sources/CMakeFiles/ping_run.dir/sockethandler.cpp.o
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_lib.dir/build.make sources/CMakeFiles/ping_lib.dir/sockethandler.cpp.o
+.PHONY : sockethandler.cpp.o
+
+sockethandler.i: sockethandler.cpp.i
+
+.PHONY : sockethandler.i
+
+# target to preprocess a source file
+sockethandler.cpp.i:
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_run.dir/build.make sources/CMakeFiles/ping_run.dir/sockethandler.cpp.i
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_lib.dir/build.make sources/CMakeFiles/ping_lib.dir/sockethandler.cpp.i
+.PHONY : sockethandler.cpp.i
+
+sockethandler.s: sockethandler.cpp.s
+
+.PHONY : sockethandler.s
+
+# target to generate assembly for a file
+sockethandler.cpp.s:
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_run.dir/build.make sources/CMakeFiles/ping_run.dir/sockethandler.cpp.s
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_lib.dir/build.make sources/CMakeFiles/ping_lib.dir/sockethandler.cpp.s
+.PHONY : sockethandler.cpp.s
+
+utils.o: utils.cpp.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.cpp.o:
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_run.dir/build.make sources/CMakeFiles/ping_run.dir/utils.cpp.o
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_lib.dir/build.make sources/CMakeFiles/ping_lib.dir/utils.cpp.o
+.PHONY : utils.cpp.o
+
+utils.i: utils.cpp.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_run.dir/build.make sources/CMakeFiles/ping_run.dir/utils.cpp.i
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_lib.dir/build.make sources/CMakeFiles/ping_lib.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_run.dir/build.make sources/CMakeFiles/ping_run.dir/utils.cpp.s
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/ping_lib.dir/build.make sources/CMakeFiles/ping_lib.dir/utils.cpp.s
+.PHONY : utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -352,6 +412,12 @@ help:
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
+	@echo "... sockethandler.o"
+	@echo "... sockethandler.i"
+	@echo "... sockethandler.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

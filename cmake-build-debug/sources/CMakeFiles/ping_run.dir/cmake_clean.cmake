@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ping_run.dir/client.cpp.o"
   "CMakeFiles/ping_run.dir/main.cpp.o"
   "CMakeFiles/ping_run.dir/server.cpp.o"
+  "CMakeFiles/ping_run.dir/sockethandler.cpp.o"
+  "CMakeFiles/ping_run.dir/utils.cpp.o"
   "ping_run"
   "ping_run.pdb"
 )

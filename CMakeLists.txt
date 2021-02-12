@@ -8,4 +8,3 @@ include_directories(headers)
 add_subdirectory(sources)
 add_subdirectory(tests)
 add_subdirectory(libs/googletest)
-z

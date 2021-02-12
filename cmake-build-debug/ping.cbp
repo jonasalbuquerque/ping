@@ -456,6 +456,14 @@
 			<Option target="ping_run"/>
 			<Option target="ping_lib"/>
 		</Unit>
+		<Unit filename="/home/jonasalbuquerque/CLionProjects/ping/sources/sockethandler.cpp">
+			<Option target="ping_run"/>
+			<Option target="ping_lib"/>
+		</Unit>
+		<Unit filename="/home/jonasalbuquerque/CLionProjects/ping/sources/utils.cpp">
+			<Option target="ping_run"/>
+			<Option target="ping_lib"/>
+		</Unit>
 		<Unit filename="/home/jonasalbuquerque/CLionProjects/ping/tests/IcmpPacketTest.cpp">
 			<Option target="ping_tests"/>
 		</Unit>

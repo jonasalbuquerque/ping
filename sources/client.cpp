@@ -9,31 +9,17 @@ Client::Client()
 
 void Client::send()
 {
-    echoRequest_ = IcmpPacket(8,
-                              0,
-                              0,
-                              getpid(),
-                              1,
-                              "Hello from client!");
-
-    echoRequest_.setChecksum(IcmpPacket::computeChecksum(echoRequest_));
-
-    auto request_buffer = echoRequest_.encode();
-
+    echoMessage_ = std::make_shared<IcmpPacket> (8,0,0,getpid(),1,"Hello from client!");
+    echoMessage_->setChecksum(IcmpPacket::computeChecksum(echoMessage_));
     sleep(1);
-
-    socketHandler_.send(request_buffer);
-
+    socketHandler_.send(echoMessage_->encode());
     Client::receive();
 }
 
 void Client::receive()
 {
-    std::vector<uint8_t> reply_buffer(26,0);
-
+    std::shared_ptr<std::vector<uint8_t>> reply_buffer = std::make_shared<std::vector<uint8_t>>(26,0);
     socketHandler_.recv(reply_buffer);
-
-    echoReply_ = IcmpPacket::decode(reply_buffer);
-
-    Utils::displayInfo(echoReply_, "ON CLIENT ECHO_REPLY");
+    echoMessage_ = IcmpPacket::decode(reply_buffer);
+    Utils::displayInfo(echoMessage_, "ON CLIENT ECHO_REPLY  ");
 }

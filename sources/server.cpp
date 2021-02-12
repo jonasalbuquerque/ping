@@ -9,26 +9,17 @@ Server::Server()
 
 void Server::listen()
 {
-    std::vector<uint8_t> request_buffer(26,0);
-
+    std::shared_ptr<std::vector<uint8_t>> request_buffer = std::make_shared<std::vector<uint8_t>>(26,0);
     socketHandler_.recv(request_buffer);
-
-    echoRequest_ = IcmpPacket::decode(request_buffer);
-
-    Utils::displayInfo(echoRequest_, "ON SERVER ECHO_REQUEST");
-
+    echoMessage_ = IcmpPacket::decode(request_buffer);
+    Utils::displayInfo(echoMessage_, "ON SERVER ECHO_REQUEST");
     Server::reply();
 }
 
 void Server::reply()
 {
-    echoReply_ = echoRequest_.operator*();
-    echoReply_.setType(0);
-    echoReply_.setPayload("Hello from server!");
-
-    auto reply_buffer = echoReply_.encode();
-
+    echoMessage_->setType(0);
+    echoMessage_->setPayload("Hello from server!");
     sleep(1);
-
-    socketHandler_.send(reply_buffer);
+    socketHandler_.send(echoMessage_->encode());
 }

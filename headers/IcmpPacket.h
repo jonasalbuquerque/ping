@@ -37,8 +37,8 @@ public:
                uint16_t p_sequenceNumber,
                std::string p_payload
     );
-    std::vector<uint8_t> encode();
-    static std::shared_ptr<IcmpPacket> decode(const std::vector<uint8_t> &inputPacket);
+    std::shared_ptr<std::vector<uint8_t>> encode();
+    static std::shared_ptr<IcmpPacket> decode(const std::shared_ptr<std::vector<uint8_t>>& inputPacket);
 
     uint8_t getType() const;
     uint8_t getCode() const;
@@ -54,7 +54,7 @@ public:
     void setSequenceNumber(const uint16_t &newSequenceNumber);
     void setPayload(const std::string &newPayload);
 
-    static uint16_t computeChecksum(IcmpPacket &packet);
+    static uint16_t computeChecksum(std::shared_ptr<IcmpPacket> packet);
 };
 
 

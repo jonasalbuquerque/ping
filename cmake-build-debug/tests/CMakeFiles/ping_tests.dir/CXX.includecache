@@ -13,12 +13,6 @@ vector
 -
 unistd.h
 -
-arpa/inet.h
--
-sys/socket.h
--
-sys/types.h
--
 memory
 -
 
@@ -349,10 +343,6 @@ acxx_demangle.h
 /home/jonasalbuquerque/CLionProjects/ping/tests/IcmpPacketTest.cpp
 IcmpPacket.h
 -
-gtest/gtest.h
-/home/jonasalbuquerque/CLionProjects/ping/tests/gtest/gtest.h
-
-/home/jonasalbuquerque/CLionProjects/ping/tests/main.cpp
 gtest/gtest.h
 /home/jonasalbuquerque/CLionProjects/ping/tests/gtest/gtest.h
 

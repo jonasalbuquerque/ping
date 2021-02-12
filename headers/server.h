@@ -16,8 +16,7 @@ public:
     void reply();
 private:
     SocketHandler socketHandler_;
-    std::shared_ptr<IcmpPacket> echoRequest_;
-    IcmpPacket echoReply_;
+    std::shared_ptr<IcmpPacket> echoMessage_;
 };
 
 #endif //PING_SERVER_H

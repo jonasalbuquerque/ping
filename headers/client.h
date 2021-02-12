@@ -12,8 +12,7 @@ public:
     void receive();
 private:
     SocketHandler socketHandler_;
-    IcmpPacket echoRequest_;
-    std::shared_ptr<IcmpPacket> echoReply_;
+    std::shared_ptr<IcmpPacket> echoMessage_;
 };
 
 

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jonasalbuquerque/CLionProjects/ping/sources/client.cpp" "/home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources/CMakeFiles/ping_run.dir/client.cpp.o"
   "/home/jonasalbuquerque/CLionProjects/ping/sources/main.cpp" "/home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources/CMakeFiles/ping_run.dir/main.cpp.o"
   "/home/jonasalbuquerque/CLionProjects/ping/sources/server.cpp" "/home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources/CMakeFiles/ping_run.dir/server.cpp.o"
+  "/home/jonasalbuquerque/CLionProjects/ping/sources/sockethandler.cpp" "/home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources/CMakeFiles/ping_run.dir/sockethandler.cpp.o"
+  "/home/jonasalbuquerque/CLionProjects/ping/sources/utils.cpp" "/home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources/CMakeFiles/ping_run.dir/utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

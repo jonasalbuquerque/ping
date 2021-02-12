@@ -6,14 +6,27 @@ sources/CMakeFiles/ping_lib.dir/IcmpPacket.cpp.o: ../sources/IcmpPacket.cpp
 
 sources/CMakeFiles/ping_lib.dir/client.cpp.o: ../headers/IcmpPacket.h
 sources/CMakeFiles/ping_lib.dir/client.cpp.o: ../headers/client.h
+sources/CMakeFiles/ping_lib.dir/client.cpp.o: ../headers/sockethandler.h
+sources/CMakeFiles/ping_lib.dir/client.cpp.o: ../headers/utils.h
 sources/CMakeFiles/ping_lib.dir/client.cpp.o: ../sources/client.cpp
 
 sources/CMakeFiles/ping_lib.dir/main.cpp.o: ../headers/IcmpPacket.h
 sources/CMakeFiles/ping_lib.dir/main.cpp.o: ../headers/client.h
 sources/CMakeFiles/ping_lib.dir/main.cpp.o: ../headers/server.h
+sources/CMakeFiles/ping_lib.dir/main.cpp.o: ../headers/sockethandler.h
+sources/CMakeFiles/ping_lib.dir/main.cpp.o: ../headers/utils.h
 sources/CMakeFiles/ping_lib.dir/main.cpp.o: ../sources/main.cpp
 
 sources/CMakeFiles/ping_lib.dir/server.cpp.o: ../headers/IcmpPacket.h
 sources/CMakeFiles/ping_lib.dir/server.cpp.o: ../headers/server.h
+sources/CMakeFiles/ping_lib.dir/server.cpp.o: ../headers/sockethandler.h
+sources/CMakeFiles/ping_lib.dir/server.cpp.o: ../headers/utils.h
 sources/CMakeFiles/ping_lib.dir/server.cpp.o: ../sources/server.cpp
+
+sources/CMakeFiles/ping_lib.dir/sockethandler.cpp.o: ../headers/sockethandler.h
+sources/CMakeFiles/ping_lib.dir/sockethandler.cpp.o: ../sources/sockethandler.cpp
+
+sources/CMakeFiles/ping_lib.dir/utils.cpp.o: ../headers/IcmpPacket.h
+sources/CMakeFiles/ping_lib.dir/utils.cpp.o: ../headers/utils.h
+sources/CMakeFiles/ping_lib.dir/utils.cpp.o: ../sources/utils.cpp
 

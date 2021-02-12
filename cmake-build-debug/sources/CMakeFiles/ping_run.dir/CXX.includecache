@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/jonasalbuquerque/CLionProjects/ping/headers/IcmpPacket.h
+../headers/IcmpPacket.h
 iostream
 -
 vector
 -
 unistd.h
 -
+memory
+-
+
+../headers/sockethandler.h
 arpa/inet.h
 -
 sys/socket.h
@@ -21,12 +25,64 @@ sys/types.h
 -
 memory
 -
+stdexcept
+-
+vector
+-
+
+../headers/utils.h
+iostream
+-
+memory
+-
+IcmpPacket.h
+../headers/IcmpPacket.h
+
+/home/jonasalbuquerque/CLionProjects/ping/headers/IcmpPacket.h
+iostream
+-
+vector
+-
+unistd.h
+-
+memory
+-
 
 /home/jonasalbuquerque/CLionProjects/ping/headers/client.h
 IcmpPacket.h
 /home/jonasalbuquerque/CLionProjects/ping/headers/IcmpPacket.h
+sockethandler.h
+/home/jonasalbuquerque/CLionProjects/ping/headers/sockethandler.h
+utils.h
+/home/jonasalbuquerque/CLionProjects/ping/headers/utils.h
 
 /home/jonasalbuquerque/CLionProjects/ping/headers/server.h
+IcmpPacket.h
+/home/jonasalbuquerque/CLionProjects/ping/headers/IcmpPacket.h
+sockethandler.h
+/home/jonasalbuquerque/CLionProjects/ping/headers/sockethandler.h
+utils.h
+/home/jonasalbuquerque/CLionProjects/ping/headers/utils.h
+
+/home/jonasalbuquerque/CLionProjects/ping/headers/sockethandler.h
+arpa/inet.h
+-
+sys/socket.h
+-
+sys/types.h
+-
+memory
+-
+stdexcept
+-
+vector
+-
+
+/home/jonasalbuquerque/CLionProjects/ping/headers/utils.h
+iostream
+-
+memory
+-
 IcmpPacket.h
 /home/jonasalbuquerque/CLionProjects/ping/headers/IcmpPacket.h
 
@@ -51,4 +107,12 @@ thread
 /home/jonasalbuquerque/CLionProjects/ping/sources/server.cpp
 ../headers/server.h
 /home/jonasalbuquerque/CLionProjects/ping/headers/server.h
+
+/home/jonasalbuquerque/CLionProjects/ping/sources/sockethandler.cpp
+sockethandler.h
+/home/jonasalbuquerque/CLionProjects/ping/sources/sockethandler.h
+
+/home/jonasalbuquerque/CLionProjects/ping/sources/utils.cpp
+utils.h
+-
 

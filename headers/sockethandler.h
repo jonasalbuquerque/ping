@@ -21,8 +21,8 @@ public:
     void connect(const uint16_t &port,
                         const std::string &ip);
 
-    void send(std::vector<uint8_t> &buf);
-    void recv(std::vector<uint8_t> &buf);
+    void send(std::shared_ptr<std::vector<uint8_t>> buf);
+    void recv(std::shared_ptr<std::vector<uint8_t>> buf);
 };
 
 #endif //PING_SOCKETHANDLER_H

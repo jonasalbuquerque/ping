@@ -7,13 +7,26 @@ sources/CMakeFiles/ping_lib.dir/IcmpPacket.cpp.o
 sources/CMakeFiles/ping_lib.dir/client.cpp.o
  /home/jonasalbuquerque/CLionProjects/ping/headers/IcmpPacket.h
  /home/jonasalbuquerque/CLionProjects/ping/headers/client.h
+ /home/jonasalbuquerque/CLionProjects/ping/headers/sockethandler.h
+ /home/jonasalbuquerque/CLionProjects/ping/headers/utils.h
  /home/jonasalbuquerque/CLionProjects/ping/sources/client.cpp
 sources/CMakeFiles/ping_lib.dir/main.cpp.o
  /home/jonasalbuquerque/CLionProjects/ping/headers/IcmpPacket.h
  /home/jonasalbuquerque/CLionProjects/ping/headers/client.h
  /home/jonasalbuquerque/CLionProjects/ping/headers/server.h
+ /home/jonasalbuquerque/CLionProjects/ping/headers/sockethandler.h
+ /home/jonasalbuquerque/CLionProjects/ping/headers/utils.h
  /home/jonasalbuquerque/CLionProjects/ping/sources/main.cpp
 sources/CMakeFiles/ping_lib.dir/server.cpp.o
  /home/jonasalbuquerque/CLionProjects/ping/headers/IcmpPacket.h
  /home/jonasalbuquerque/CLionProjects/ping/headers/server.h
+ /home/jonasalbuquerque/CLionProjects/ping/headers/sockethandler.h
+ /home/jonasalbuquerque/CLionProjects/ping/headers/utils.h
  /home/jonasalbuquerque/CLionProjects/ping/sources/server.cpp
+sources/CMakeFiles/ping_lib.dir/sockethandler.cpp.o
+ ../headers/sockethandler.h
+ /home/jonasalbuquerque/CLionProjects/ping/sources/sockethandler.cpp
+sources/CMakeFiles/ping_lib.dir/utils.cpp.o
+ ../headers/IcmpPacket.h
+ ../headers/utils.h
+ /home/jonasalbuquerque/CLionProjects/ping/sources/utils.cpp

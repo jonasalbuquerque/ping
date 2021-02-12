@@ -129,12 +129,40 @@ sources/CMakeFiles/ping_run.dir/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ping_run.dir/server.cpp.s"
 	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/ping/sources/server.cpp -o CMakeFiles/ping_run.dir/server.cpp.s
 
+sources/CMakeFiles/ping_run.dir/sockethandler.cpp.o: sources/CMakeFiles/ping_run.dir/flags.make
+sources/CMakeFiles/ping_run.dir/sockethandler.cpp.o: ../sources/sockethandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sources/CMakeFiles/ping_run.dir/sockethandler.cpp.o"
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping_run.dir/sockethandler.cpp.o -c /home/jonasalbuquerque/CLionProjects/ping/sources/sockethandler.cpp
+
+sources/CMakeFiles/ping_run.dir/sockethandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ping_run.dir/sockethandler.cpp.i"
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonasalbuquerque/CLionProjects/ping/sources/sockethandler.cpp > CMakeFiles/ping_run.dir/sockethandler.cpp.i
+
+sources/CMakeFiles/ping_run.dir/sockethandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ping_run.dir/sockethandler.cpp.s"
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/ping/sources/sockethandler.cpp -o CMakeFiles/ping_run.dir/sockethandler.cpp.s
+
+sources/CMakeFiles/ping_run.dir/utils.cpp.o: sources/CMakeFiles/ping_run.dir/flags.make
+sources/CMakeFiles/ping_run.dir/utils.cpp.o: ../sources/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sources/CMakeFiles/ping_run.dir/utils.cpp.o"
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping_run.dir/utils.cpp.o -c /home/jonasalbuquerque/CLionProjects/ping/sources/utils.cpp
+
+sources/CMakeFiles/ping_run.dir/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ping_run.dir/utils.cpp.i"
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonasalbuquerque/CLionProjects/ping/sources/utils.cpp > CMakeFiles/ping_run.dir/utils.cpp.i
+
+sources/CMakeFiles/ping_run.dir/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ping_run.dir/utils.cpp.s"
+	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/ping/sources/utils.cpp -o CMakeFiles/ping_run.dir/utils.cpp.s
+
 # Object files for target ping_run
 ping_run_OBJECTS = \
 "CMakeFiles/ping_run.dir/IcmpPacket.cpp.o" \
 "CMakeFiles/ping_run.dir/client.cpp.o" \
 "CMakeFiles/ping_run.dir/main.cpp.o" \
-"CMakeFiles/ping_run.dir/server.cpp.o"
+"CMakeFiles/ping_run.dir/server.cpp.o" \
+"CMakeFiles/ping_run.dir/sockethandler.cpp.o" \
+"CMakeFiles/ping_run.dir/utils.cpp.o"
 
 # External object files for target ping_run
 ping_run_EXTERNAL_OBJECTS =
@@ -143,9 +171,11 @@ sources/ping_run: sources/CMakeFiles/ping_run.dir/IcmpPacket.cpp.o
 sources/ping_run: sources/CMakeFiles/ping_run.dir/client.cpp.o
 sources/ping_run: sources/CMakeFiles/ping_run.dir/main.cpp.o
 sources/ping_run: sources/CMakeFiles/ping_run.dir/server.cpp.o
+sources/ping_run: sources/CMakeFiles/ping_run.dir/sockethandler.cpp.o
+sources/ping_run: sources/CMakeFiles/ping_run.dir/utils.cpp.o
 sources/ping_run: sources/CMakeFiles/ping_run.dir/build.make
 sources/ping_run: sources/CMakeFiles/ping_run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ping_run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ping_run"
 	cd /home/jonasalbuquerque/CLionProjects/ping/cmake-build-debug/sources && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ping_run.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
